@@ -1,0 +1,308 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --LightBlue: hsl(233, 100%, 69%);
+    --StrongCyan: hsl(171, 66%, 44%);
+    --Dark-GrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.contanier{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:768px){
+    .contanier{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .contanier{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .contanier{
+        width: 1170px;
+    }
+}
+/* start section 1 */
+.secation .landing{
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+}
+.secation .content{
+    text-align: center;
+    padding-top: 80px;
+}
+.secation .content img{
+    padding: 30px 0px;
+    width: 100px;
+}
+.text-heading{
+    width: 540px;
+    margin:50px auto;
+    text-align: center;
+}
+.text-heading h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.text-heading p{
+    margin: auto;
+    line-height: 1.7;
+    color: var(--GrayishBlue);
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+.btn{
+    text-align: center;
+}
+a{
+    display: inline-block;
+    margin: 0px 10px 50px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+}
+a:first-child{
+    background-color: var(--StrongCyan);
+    box-shadow: rgba(38, 186, 164, 0.57) 0px 4px 15px 1px;
+}
+a:last-child{
+    background-color: var(--LightBlue);
+    box-shadow: hsla(233, 100%, 69%, 0.624) 0px 4px 15px 1px;
+}
+@media(max-width:768px){
+    .secation .content .text{
+        width: 100%;
+    }
+    .secation .content .text h2{
+        font-size: 33px;
+    }
+a{
+        display: block;
+        margin: 30px 0px;
+    }
+    .text-heading{
+        width: 100%;
+    }
+    /* end section 1 */
+}
+/* start section 2 */
+
+.section2 .contanier{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.section2 .text{
+    text-align: center;
+    margin: 100px auto;
+    word-break:break-all;
+}
+.section2 .text h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.section2 .text p{
+    width: 750px;
+    margin:0 auto;
+    color: var(--GrayishBlue);
+    line-height: 1.5;
+    font-size:19px;
+    font-weight: 600;
+}
+
+.section2 .Possibilities{
+    display: flex;
+    align-items: center;
+}
+.section2 .Possibilities img{
+    position: relative;
+    left: -60px;
+    margin-right: 60px;
+    MAX-width: 100%;
+}
+.section2 .Possibilities .text{
+    text-align: unset;
+    max-width: 100%;
+}
+.section2 .Possibilities .text h2{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.section2 .Possibilities .text p{
+    width: 400px;
+    word-break:break-all;
+}
+@media(max-width:900px){
+    .section2 .contanier{
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+    .section2 .text p{
+        width: 100%;
+    }
+    .section2 .Possibilities{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section2 .Possibilities img {
+        margin-right: 0;
+        left: 0;
+    }
+    .section2 .Possibilities .text h2,
+    .section2 .Possibilities .text p{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* end section 2 */
+/* start seaction 3 */
+.secation3{
+    margin: 100px 0;
+}
+.secation3 .photo{
+    text-align: center;
+    width: 100%;
+}
+.secation3 .photo img{
+    max-width: 100%;
+}
+.secation3 .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+.secation3 .cards img{
+    display: block;
+    margin:0 auto 30px;
+    width: 40px;
+    height: 30px;
+} 
+.secation3 .cards h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.secation3 .cards p {
+    color: var(--GrayishBlue);
+    line-height: 1.7;
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.secation3 .brand{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+.secation3 .brand img{
+    width: 150px;
+}
+@media(max-width:900px){
+    .secation3 .brand{
+        gap: 70px 0px;
+    }
+}
+/* end seaction 3 */
+/* start footer */
+.footer{
+    background-color: hsla(202, 11%, 66%, 0.193);
+}
+.footer .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.footer .contanier img{
+    width: 50px;
+}
+.footer .contanier .text{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    align-items: center;
+}
+.footer .contanier .text p{
+    padding: 10px ;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+
+}
+
+    .footer .contanier .text p:hover {
+        color: var(--StrongCyan);
+        cursor: pointer;
+        text-shadow: 0px 0px 4px hsla(171, 66%, 44%, 0.371);
+    }
+.footer .contanier ul{
+    display: flex;
+    list-style: none;
+}
+.footer .contanier ul li{
+    margin: 0px 10px ;
+}
+.footer .contanier ul li i{
+    font-size: 30px;
+    transition: 0.3s;
+}
+.footer .contanier ul li i:hover{
+    transform:scale(1.1);
+
+}
+
+.footer .contanier ul li:first-child:hover{
+    color: #0770f8;
+}
+.footer .contanier ul li:nth-child(2):hover{
+    color: #229ae4;
+}
+.footer .contanier ul li:last-child:hover{
+    color: #f56040;
+}
+@media(max-width:768px){
+    .footer .contanier{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .contanier .text{
+        display: block;
+        margin: 10px 0px;
+    }
+    .footer .contanier ul li{
+        margin: 10px;
+    }
+}
+/* end footer */
